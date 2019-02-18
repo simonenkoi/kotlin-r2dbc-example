@@ -1,0 +1,7 @@
+spring:
+  data:
+    postgres:
+      host: localhost
+      database: mytestdb
+      username: admin
+      password: admin
