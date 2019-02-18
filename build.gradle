@@ -1,5 +1,8 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.3.20'
+    id 'org.jetbrains.kotlin.plugin.jpa' version '1.3.20'
+    id 'org.springframework.boot' version '2.1.3.RELEASE'
+    id 'org.jetbrains.kotlin.plugin.spring' version '1.3.20'
 }
 
 group 'edu.khai.simonenko'
@@ -20,8 +23,12 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.12"
+    kotlinOptions.jvmTarget = "1.8"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.12"
+    kotlinOptions.jvmTarget = "1.8"
 }
+
+apply plugin: 'kotlin-jpa'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'kotlin-spring'

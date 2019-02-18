@@ -4,6 +4,9 @@ import edu.khai.simonenko.model.Person
 import edu.khai.simonenko.repository.PersonRepository
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.CommandLineRunner
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 import reactor.core.publisher.Mono
 
 @SpringBootApplication
